@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1D2951"
+    tools:context=".actiontvseries">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/Top3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="#00000000"
+            android:gravity="center"
+            android:text="@string/top_3_recommended_action_movies"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            app:fontFamily="@font/montserrat"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/triplefrontier"
+            android:layout_width="match_parent"
+            android:layout_height="175dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/tripfrontier"
+            android:gravity="center"
+            android:text="@string/triple_frontier"
+            android:textAllCaps="false"
+            android:hapticFeedbackEnabled="true"
+            android:textColor="#FFFFFF"
+            android:textSize="36sp"
+            app:fontFamily="@font/montserrat"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Top3"
+            tools:ignore="OnClick" />
+
+        <TextView
+            android:id="@+id/vforvendetta"
+            android:layout_width="match_parent"
+            android:layout_height="175dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/vforvend"
+            android:gravity="center"
+            android:text="@string/v_for_vendetta"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="36sp"
+            app:fontFamily="@font/montserrat"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/triplefrontier" />
+
+        <TextView
+            android:id="@+id/thematrix"
+            android:layout_width="match_parent"
+            android:layout_height="175dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/thematrixbackground"
+            android:gravity="center"
+            android:text="@string/the_matrix"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="36sp"
+            app:fontFamily="@font/montserrat"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/vforvendetta" />
+    </LinearLayout>
+</ScrollView>
